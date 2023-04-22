@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+
+.me {
+    max-width: 100px;
+}
+
+h1 {
+    font-size: "Philosopher", serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+}
