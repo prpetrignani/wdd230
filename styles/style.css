@@ -1,24 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
-.title {
-    display: flex;
-    background-color: 3, 25, 38;
-    box-shadow: 5px 10px 18px #888888;
+body {
+    padding: 50px;
 }
 
-.me img {
-    max-width: 100px;
+.title {
+    display: flex;
+    flex: 1 1 200;}
+
+.title, footer{
+    background-color: rgb(3, 25, 38);
+    box-shadow: 5px 10px 18px #888888;
+    padding: 10px;
+}
+
+footer {
+    color: rgb(255, 255, 188);
+    text-align: center;
+}
+
+.me {
+    width: 150px;
+    border: solid 2px white;
+    box-shadow: 3px 3px 8px #cecece;
 }
 
 h1 {
     font-family: "Playfair Display", serif;
-    font-size: 1.1em;
     color: white;
+    padding: 20px;
+}
+
+.core {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 h2 {
 font-family: 'Comfortaa', cursive;
-font-size: 0.8em;
 color: black;
+padding-top: 20px;
+}
+
+ul, p {
+    font-family: arial, sans-serif;
+    line-height: 1.5em;
+}
+
+p {
+    font-style: italic;
 }
