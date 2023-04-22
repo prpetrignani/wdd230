@@ -30,6 +30,7 @@ h1 {
     font-family: "Playfair Display", serif;
     color: white;
     padding: 20px;
+    margin-top: 50px;
 }
 
 .core {
@@ -43,11 +44,16 @@ color: black;
 padding-top: 20px;
 }
 
-ul, p {
+ul, .string, .copy {
     font-family: arial, sans-serif;
     line-height: 1.5em;
 }
 
-p {
+.string {
     font-style: italic;
+}
+
+.update {
+    font-family: arial, sans-serif;
+    font-size: 0.9em;
 }
