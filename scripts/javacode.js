@@ -1,5 +1,5 @@
 let last = document.lastModified;
 document.getElementById('lastupdate').innerHTML = last;
 
-//const option = {year: 'numeric'};
-document.getElementById("date").textContent = new Date().getUTCFullYear;
+const option = {year: 'numeric'};
+document.getElementById('date').innerHTML = new Date().getFullYear('en-US', Option);
