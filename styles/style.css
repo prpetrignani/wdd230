@@ -6,8 +6,7 @@ body {
 }
 
 .title {
-    display: flex;
-    flex: 1 1 200;}
+    display: flex;}
 
 .title, footer{
     background-color: rgb(3, 25, 38);
