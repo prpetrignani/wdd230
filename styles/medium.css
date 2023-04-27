@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
 @media only screen and (min-width: 32.5em) {
 
 a:link {
@@ -6,10 +7,11 @@ a:link {
 
 ul {
     list-style-type: none;
+    font-family: 'Bruno Ace', cursive;
+    line-height: 1.5em;
 }
 
 h1 {
-    line-break: normal;
     padding: 20px;
 }
 
@@ -25,6 +27,10 @@ body {
 h2 {
     font-weight: bold;
     color: orangered;
+}
+
+.string {
+    text-align: left;
 }
 
 }
