@@ -1,9 +1,30 @@
 @media only screen and (min-width: 32.5em) {
-    body{
-        padding: 0px;
-    }
 
-    h1 {
-        font-family: arial;
-    }
+a:link {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    line-break: normal;
+    padding: 20px;
+}
+
+body {
+    padding: 50px;
+}
+
+.me {
+    width: 150px;
+    margin-right: 0px;
+}
+
+h2 {
+    font-weight: bold;
+    color: orangered;
+}
+
 }
