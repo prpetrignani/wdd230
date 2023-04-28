@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Red+Rose:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+img {
+    margin-top: 20px;
+}
+
+h1, h2, h3, footer {
+    font-family: 'Red Rose', cursive;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+p, a:link, h4 {
+    font-family: 'Open Sans', sans-serif;
+   }
+
+.para {
+    margin-bottom: 50px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.title, footer {
+    background-color: black;
+    color: rgb(240, 239, 251);
+    padding: 10px;
+}
+
+h3 {
+    margin: auto;
+}
+
+body {
+    background-color: rgb(240, 239, 251);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: black;
+  }
+
+  a:hover {
+    color: red;
+    font-weight: 600;
+  }
+
+h4 {
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 900px){
+    
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .alignment {
+        grid-column: 1 / sapn2;
+    }
+
+    .alignment img {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    main {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        width: 95%;
+        margin-top: 15px;
+    }
+}
