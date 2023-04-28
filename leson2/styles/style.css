@@ -3,13 +3,17 @@
 
 main {
     display: grid;
-    grid-template-columns: auto;
-    margin-right: 150px;
-    margin-left: 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 20px;
 }
 
 img {
     margin-top: 20px;
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-top: 15px;
 }
 
 h1, h2, h3, footer {
@@ -21,12 +25,15 @@ h1 {
     text-transform: uppercase;
 }
 
+h2 {
+    margin-top: -20px;
+}
+
 p, a:link, h4 {
     font-family: 'Open Sans', sans-serif;
    }
 
 .para {
-    margin-bottom: 50px;
     font-size: 1.2em;
     line-height: 1.6;
 }
@@ -63,22 +70,15 @@ h4 {
     margin-bottom: 0px;
 }
 
-@media screen and (max-width: 900px){
+@media only screen and (max-width: 900px) {
     
     main {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         gap: 30px;
         padding: 20px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    img {
-        display: block;
-        margin: auto;
-        width: 100%;
-        margin-top: 15px;
     }
     
     .alignment {
@@ -91,11 +91,12 @@ h4 {
 
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
 
     main {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
         padding: 10px;
         margin-left: auto;
         margin-right: auto;
@@ -107,4 +108,22 @@ h4 {
         width: 95%;
         margin-top: 15px;
     }
+
+    .ducati {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .coolors {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .alignment {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+
+
 }
