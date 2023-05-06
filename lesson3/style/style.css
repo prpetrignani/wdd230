@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Open+Sans:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap');
+
+body {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+
+.top {
+    background-color: #ac551f;
+}
+
+h1, h2, h3, .header, .heading1, .heading2, .heading3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    text-align: center;
+    color: #f7f7ff;
+}
+
+h2, h3, .heading1, .heading2, .heading3 {
+    color: #ac551f;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    font-family: 'Gruppo', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    display: grid;
+    gap: 10px;
+    text-align: center;
+}
+
+nav a, a:visited {
+    color: #000000;
+}
+
+nav a {
+    border-bottom: 2px solid #3A93e1;
+}
+
+
+p, .scenario li {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #AD551F;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer p, .fine {
+    font-family: 'Gruppo', cursive;
+    color: #f7f7ff;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.zoe, .mark, .color {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.riga {
+    height: 5px;
+    background-color: #AD551F;
+}
+
+.header {
+    font-size: 30px;
+    color: #F7F7FF;
+    background-color: #AD551F;
+}
+
+.header::first-letter, .navigation::first-letter, .fine::first-letter,
+.heading1::first-letter, .heading2::first-letter, .heading3::first-letter, .paragraph::first-letter {
+    margin-left: 10px;
+}
+
+.navigation {
+    font-family: 'Gruppo', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #3A93e1;
+}
+
+.fine {
+    background-color: #AD551F;
+    font-size: 20px;
+}
+
+.heading1 {
+    font-size: 30px;
+}
+
+.heading2 {
+    font-size: 25px;
+}
+
+.heading3 {
+    font-size: 20px;
+}
+
+.paragraph {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.heading1, .heading2, .heading3, .fine, .navigation, .header, .paragraph {
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+
+.style {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 15px;
+}
+
+.cella {
+    border: 2px solid #AD551F;
+    border-radius: 5px;
+}
+
+.cella p {
+    margin-left: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .style {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+    }
+
+    body {
+        max-width: 1000px;
+       margin: auto;
+    }
+}
