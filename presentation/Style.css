@@ -1,0 +1,23 @@
+.ciao {
+    background-color: blue;
+}
+
+#logo {
+    box-shadow: 10px 10px 5px black;
+}
+
+img {
+    max-width: 150px;
+}
+
+h1 {
+    color:red;
+}
+
+#hope {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ciao {
+    background-color: yellowgreen;
+}
