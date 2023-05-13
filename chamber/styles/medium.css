@@ -1,0 +1,49 @@
+@media only screen and (min-width: 560px) {
+    #logo {
+        display: block;
+        max-width: 80px;
+        margin: 15px;
+    }
+
+    #date {
+        margin: auto;
+        padding: 5px 25px;
+        font-size: 15px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+
+    .box1, .box4, .box5, .box6 {
+        grid-column: 1 / 3;
+    }
+
+    .box2, .box3 {
+        grid-row: 5 / 6;
+    }
+
+    .column {
+        display: grid;
+        grid-template-columns: 80px 42% 38%;
+    }
+    
+    #logoFot {
+        grid-column: 1/2;
+    }
+
+    .chamberFot {
+        grid-column: 2/3;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .chamberFot, .line {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+
+
+}

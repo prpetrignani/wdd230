@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -11,14 +12,24 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Verona C.C. logo">
-        <h1>Verona <span>Chamber of Commerce</span></h1>
         <div>
-            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook logo"></a>
+            <img id="logo" src="images/logo.png" alt="Verona C.C. logo">
+            <div>
+                <h4>
+                    Verona
+                </h4>
+                <p class="chamber">
+                    Chamber of Commerce
+                </p>
+            </div>
+        </div>
+        <div class="social">
+            <a id="twitter" href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook logo"></a>
             <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter logo"></a>
         </div>
         <nav>
-            <ul>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Location</a></li>
@@ -28,29 +39,47 @@
         <div id="date"></div>
     </header>
     <main>
-        <div class="box">
-            <h2>First section</h2>
+        <div class="box1">
+            <h2>Hero</h2>
         </div>
-        <div class="box">
-            <h2>second section</h2>
+        <div class="box2">
+            <h2>Event</h2>
         </div>
-        <div class="box">
-            <h2>Third section</h2>
+        <div class="box3">
+            <h2>Weater</h2>
         </div>
-        <div class="box">
-            <h2>Forth section</h2>
+        <div class="box4">
+            <h2>News</h2>
         </div>
-        <div class="box">
-            <div class="box2">
-                <h3>Fifth section</h3>
+        <div class="box5">
+            <div class="box">
+                <h3>Spotlight 1</h3>
             </div>
-            <div class="box2">
-                <h3>Sixth section</h3>
+            <div class="box">
+                <h3>Spotlight 2</h3>
             </div>
+        </div>
+        <div class="box6">
+            <h2>Join</h2>
         </div>
     </main>
     <footer>
-        &copy; Verona Chamber | <span>Paolo Roberto Petrignani</span> | WDD 230 Project | Last Modification: <span id="lastMdf"></span>
+        <div class="column">
+            <img id="logoFot" src="images/logo.png" alt="Verona C.C. logo">
+            <p class="chamberFot">
+                Verona<br>
+                Chamber of Commerce<br>
+                <span class="address">Via Trieste, 60 - Verona, Italy</span>
+            </p>
+            <p class="line">
+                info@veronacc.com<br>
+                +39 358 42 56 256<br>
+                <a href="#"><img class="icon" src="images/direction.png" alt="direction icon"></a>Location Map
+            </p>
+        </div>
+        <div class="line">
+            &copy; Verona Chamber | <span>Paolo Roberto Petrignani</span> | WDD 230 Project | <br>Last Modification: <span id="lastMdf"></span>
+        </div>
     </footer>
     <script src="scripts/javacode.js"></script>
 </body>
