@@ -2,7 +2,6 @@
 
 header {
     display: grid;
-    grid-template-columns: 53% 17% 30%;
     grid-template-rows: 60px 60px;
     padding: auto;
     gap: 15px;
@@ -110,9 +109,43 @@ nav ul.open {
 .box, .box1, .box2, .box3, .box4, .box5, .box6 {
     margin: 10px;
     width: auto;
-    background-color: #F7F7FF;
     border: 1px solid #3A93E1;
     text-align: center;
+}
+
+.box1 {
+}
+
+.box1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.box1 h2 {
+
+}
+
+.box4 p, .box6 p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+.box6 button {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3A93E1;
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    color: #F7F7FF;
+    box-shadow: 3px 3px 10px gray;
 }
 
 footer {
@@ -151,6 +184,16 @@ footer {
     max-height: 15px;
     width: auto;
     margin-right: 5px;
+}
+
+.line a {
+    text-decoration: none;
+    color: #F7F7FF;
+}
+
+.line a:hover {
+    color:#3A93E1;
+    font-weight: bold;
 }
 
 .chamberFot {
