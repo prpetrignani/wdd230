@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/windchill.js"></script>
     <title>Verona Chamber of Commerce</title>
 </head>
 <body>
+    <div id="banner">
+        <p>
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </p>
+    </div>
     <header>
         <div>
-            <img id="logo" src="images/logo.png" alt="Verona C.C. logo">
+            <img id="logo" src="images/logo-copia.webp" alt="Verona C.C. logo">
             <div>
                 <h4>
                     Verona
@@ -40,15 +46,43 @@
     </header>
     <main>
         <div class="box1">
-            <img src="images/verona.jpg" alt="Verona">
+            <picture>
+                <img src="images/wdd230-org.jpg" alt="people" sizes="50vw"
+                srcset="images/wdd230-200.jpg 200w,
+                images/wdd230-500.jpg 500w,
+                images/wdd230-800.jpg 800w,
+                images/wdd230-1100.jpg 1100w">
+            </picture>
             <h2>Welcome to Verona</h2>
-            <button>Join the Chamber</button>
+            <button id="joinChamber">Join the Chamber</button>
         </div>
         <div class="box2">
-            <h2>Event</h2>
+            <h2>48th Annual General Meeting</h2>
+            <p>
+                The U.S.-India Business Council (USIBC) is excited to announce its 48th Annual General Meeting and India Ideas Summit, taking place June 12-13, 2023.
+                This year we will be hosting our Summit at the U.S. Chamber of Commerce headquarters in Washington D.C., in an in-person format.
+            </p>
         </div>
         <div class="box3">
             <h2>Weater</h2>
+            <img src="images/cloudy-copia.webp" alt="Weater-pic">
+            <p id="temp">
+                33°C
+            </p>
+            <p class="meteo">
+                Partly Cloudy
+            </p>
+            <div id="wind">
+                <p>
+                    Wind speed:
+                </p>
+            </div>
+            <div id="data">
+                <p id="speed">
+                    2.5 km/h
+                </p>
+            </div id="chill">
+            </div>
         </div>
         <div class="box4">
             <h2>News</h2>
@@ -61,15 +95,38 @@
         </div>
         <div class="box5">
             <div class="box">
-                <h3>Spotlight 1</h3>
+                <h3>Job Listings</h3>
+                <img src="images/jobs-list.webp" alt="Jobs List">
+                <p>
+                    <a href="#">Take a look to all the job's opportunities we offer to you!</a>
+                </p>
             </div>
             <div class="box">
-                <h3>Spotlight 2</h3>
+                <h3>Learn To Paint</h3>
+                <img src="images/painting.webp" alt="Woman Painting">
+                <p>
+                    Come and learn how to paint with different techniques
+                </p>
+                <p class="enfasi">
+                    paint@veronachamber.it<br>
+                    +39 358 58 41 125
+                </p>
+            </div>
+            <div class="box">
+                <h3>Where ideas meet</h3>
+                <img src="images/consulting.webp" alt="People Sharing Ideas">
+                <p>
+                    The Verona Chamber of Commerce is even a place where you can find support, guide and other professional that will help you bring your ideas to life
+                </p>
+                <p class="enfasi">
+                    consultin@veronachamber.it<br>
+                    +39 388 54 75 554
+                </p>
             </div>
         </div>
         <div class="box6">
             <p>
-                Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+                Become part of our Chamber of Commerce
             </p>
             <button id="join">Join Us</button>
 

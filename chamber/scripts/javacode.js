@@ -21,3 +21,28 @@ try {
 
 let last = document.lastModified;
 document.getElementById('lastMdf').innerHTML = last;
+
+function showBanner () {
+
+	var x = getElementById('banner');
+	const weekday = new Date();
+	const day = weekday.getDate();
+
+	if (weekday === 1 || weekday === 2) {
+		console.log(day);
+	}
+
+	else {
+		display = "none";
+	}
+}
+
+/*const giorno = document.querySelector("#banner");
+if (giorno == 1 || giorno == 2) {
+	x.style.display = "block";
+}
+
+else {
+	x.style.display = "none";
+}
+*/

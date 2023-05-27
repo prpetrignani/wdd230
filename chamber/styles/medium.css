@@ -32,6 +32,10 @@
         grid-column: 4/6;
     }
 
+    .box3 img {
+        margin-left: 15px;
+    }
+
     .column {
         display: grid;
         grid-template-columns: 80px 42% 38%;

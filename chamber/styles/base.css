@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Open+Sans:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap');
 
+#banner {
+    background-color: #3A93E1;
+    margin: 0;
+}
+
+#banner p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    color: #F7F7FF;
+    text-align: center;
+    padding: 10px;
+}
+
 header {
     display: grid;
     grid-template-rows: 60px 60px;
@@ -109,11 +122,12 @@ nav ul.open {
 .box, .box1, .box2, .box3, .box4, .box5, .box6 {
     margin: 10px;
     width: auto;
-    border: 1px solid #3A93E1;
+    border: 2px solid #3A93E1;
     text-align: center;
 }
 
 .box1 {
+    position: relative;
 }
 
 .box1 img {
@@ -122,8 +136,92 @@ nav ul.open {
     object-fit: cover;
 }
 
-.box1 h2 {
+#joinChamber {
+    position: absolute;
+    min-width: 80px;
+    width: 30%;
+    bottom: 15px;
+    right: 25px;
+}
 
+.box1 h2 {
+    position: absolute;
+    top: 0;
+    color: #AC551F;
+    width: 100%;
+    text-shadow: 1px 1px 2px #F7F7FF;
+}
+
+.box2 h2, .box2 p, .box3 p, .box p {
+    padding: 5px;
+}
+
+.box3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 35% 25% 10% 10%;
+    gap: 5px;
+    max-height: 350px;
+}
+
+.box2 p, .box3 p, .box p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+.box3 h2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.box3 img {
+    grid-column: 1/2;
+    max-width: 80px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.box3 img, #temp {
+    grid-row: 2/3;
+}
+
+#temp {
+    grid-column: 2/3;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #3A93E1;
+    margin-right: 10px;
+}
+
+.meteo {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 1px solid #3A93E1;
+}
+
+#wind {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    text-align: right;
+}
+
+#chill {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    text-align: center;
+}
+
+#data {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: left;
+}
+
+#wind, #data, #chill {
+    margin-top: -15px;
 }
 
 .box4 p, .box6 p {
@@ -133,7 +231,7 @@ nav ul.open {
     padding: 10px;
 }
 
-.box6 button {
+.box6 button, .box1 button {
     width: 150px;
     height: auto;
     padding: 10px;
@@ -146,6 +244,21 @@ nav ul.open {
     font-size: 20px;
     color: #F7F7FF;
     box-shadow: 3px 3px 10px gray;
+}
+
+.box a {
+    color: black;
+    margin: 15px;
+}
+
+.box img {
+    max-width: 150px;
+    text-align: center;
+    margin: auto;
+}
+
+.enfasi {
+    font-style: italic;
 }
 
 footer {
@@ -186,12 +299,15 @@ footer {
     margin-right: 5px;
 }
 
-.line a {
+.line a, .box a {
     text-decoration: none;
+}
+
+.line a {
     color: #F7F7FF;
 }
 
-.line a:hover {
+.line a:hover, .box a:hover {
     color:#3A93E1;
     font-weight: bold;
 }
