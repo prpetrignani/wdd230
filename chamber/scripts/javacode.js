@@ -12,6 +12,8 @@ function showBanner () {
 	}
 }
 
+
+
 showBanner();
 
 //menu hamburger
@@ -43,17 +45,68 @@ let last = document.lastModified;
 document.getElementById('lastMdf').innerHTML = last;
 
 
+/*Discover page*/
+
+//carica tutte le immagini che hanno l'attriubto data-src all'interno del tag img di tutto il documento
+let imagesToLoad = document.querySelectorAll("img[data-src]");
 
 
+//parametri opzionali che impostano la sezione IntersectionalObserver 
+const imgOptions = {
+	threshold: 0,
+	rootMargin: "0px 0px 50px 0px"
+};
 
+const loadImages = (image) => {
+	image.setAttribute('src', image.getAttribute('data-src'));
+	image.onload = () => {image.removeAttribute('data-src');};
+};
 
+//per primo controlla se l'interezione Observ è supportata
+if('IntersectionObserver' in window) {
+	const imgObserver = new IntersectionObserver((items, observer) => {
+	items.forEach((item) => {
+        if (item.isIntersecting) {
+	        loadImages(item.target);
+	        observer.unobserve(item.target);
+        }
+	});
+    }, imgOptions);
 
-/*const giorno = document.querySelector("#banner");
-if (giorno == 1 || giorno == 2) {
-	x.style.display = "block";
+// Fai il loop con tutte le imagini nello momento del check e carciale se necessario
+    imagesToLoad.forEach((img) => {
+        imgObserver.observe(img);
+    });
 }
 
+// nel caso il codice non sia supportato carica tutte le immagini
 else {
-	x.style.display = "none";
+	imagesToLoad.forEach((img) => {
+		loadImages(img);
+	});
 }
-*/
+
+//giorni dall'ultima visita
+localStorage.setItem('lastVisit', '06-03-2023');
+
+function displayDaysSinceLastVisit() {
+  const visitsDisplay = document.querySelector('#ultimaVisita');
+
+  const lastVisit = localStorage.getItem('lastVisit');
+
+  const lastVisitDate = Date.parse(lastVisit);
+  
+  if (!lastVisitDate) {
+    // Stored date is not a valid format
+    return;
+  }
+
+  const currentDate = new Date();
+
+  const difference = currentDate - lastVisitDate;
+  const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+  visitsDisplay.innerText = "Days since last visit: " + differenceInDays;
+}
+
+displayDaysSinceLastVisit();

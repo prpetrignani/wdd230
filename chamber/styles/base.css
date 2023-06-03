@@ -107,6 +107,10 @@ nav ul.open {
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
 
+main {
+    margin: 10px;
+}
+
 #date {
     grid-column: 1/4;
     text-align: center;
@@ -130,7 +134,7 @@ nav ul.open {
     position: relative;
 }
 
-.box1 img {
+.box1 img, .pic1, .pic2, .photo img{
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -164,7 +168,7 @@ nav ul.open {
     max-height: 350px;
 }
 
-.box2 p, .box3 p, .box p, #chill {
+.box2 p, .box3 p, .box p, #chill, .discover {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
 }
@@ -320,4 +324,52 @@ footer {
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     color: #AC551F;
+}
+
+/*dmographic*/
+.pagina2, .gallery {
+    text-align: center;
+}
+
+.discover {
+    text-align: left;
+}
+
+.stats1, .stats2, .tour {
+    font-family: 'Gruppo', cursive;
+    font-size: 1em;
+    color: #3A93E1;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pic1, .pic2 {
+    display: block;
+    margin: auto;
+    max-width: 700px;
+}
+
+.photo img[data-src]{
+    filter:blur(0.2em)
+}
+
+.photo img {
+    filter:blur(0em);
+    transition:filter 0.5s;
+    display: block;
+    margin: auto;
+    max-width: 700px;
+    height: auto;
+}
+
+.gallery {
+    border-top: 1px solid #3A93E1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*ultima visita*/
+
+#ultimaVisita {
+    font-style: italic;
 }

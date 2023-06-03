@@ -63,4 +63,23 @@
     footer {
         font-size: 20px;
     }
+
+    /*discover*/
+    .grigliastatistiche {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 15% 85%;
+    }
+
+    .stats1, .stats2 {
+        grid-row: 1/2;
+    }
+
+    .stats1 {
+        grid-column: 1/2;
+    }
+
+    .stats2 {
+        grid-column: 2/3;
+    }
 }
