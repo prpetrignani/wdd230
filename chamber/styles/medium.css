@@ -64,7 +64,3 @@
     font-size: 1.2em;
 }
 
-.photo img:hover {
-    box-shadow: 0 0 30px #333;
-    border: 1px solid black;
-}
