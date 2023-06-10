@@ -487,3 +487,13 @@ td a {
     color: #F7F7FF;
     box-shadow: 3px 3px 10px gray;
 }
+
+/*thank you*/
+
+#ok, #message {
+    text-align: center;
+}
+
+#message {
+    font-family: 'Open Sans', sans-serif;
+}

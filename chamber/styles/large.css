@@ -155,7 +155,6 @@
     }
 
     /*join*/
-
     tbody {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -179,5 +178,9 @@
 
     td {
         margin: 0 10px 0 10px;
+    }
+
+    fieldset div {
+        font-size: 1.2em;
     }
 }
