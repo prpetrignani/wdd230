@@ -251,6 +251,11 @@ main {
     box-shadow: 3px 3px 10px gray;
 }
 
+.box6 button:hover, .box1 button:hover, #joinBt:hover {
+    background-color: #F7F7FF;
+    color: #3A93E1;
+}
+
 .box a {
     color: black;
     margin: 15px;
