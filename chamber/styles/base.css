@@ -326,6 +326,8 @@ h1, h2, h3 {
     color: #AC551F;
 }
 
+
+
 /*dmographic*/
 .pagina2, .gallery {
     text-align: center;
@@ -368,14 +370,16 @@ h1, h2, h3 {
     margin-bottom: 50px;
 }
 
-/*ultima visita*/
 
+
+/*ultima visita*/
 #ultimaVisita {
     font-style: italic;
 }
 
-/*form*/
 
+
+/*form*/
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #AC551F;
