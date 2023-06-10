@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <title>Join the Chamber</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo" src="images/logo-copia.webp" alt="Verona C.C. logo">
+            <div>
+                <h4>
+                    Verona
+                </h4>
+                <p class="chamber">
+                    Chamber of Commerce
+                </p>
+            </div>
+        </div>
+        <div class="social">
+            <a id="twitter" href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook logo"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter logo"></a>
+        </div>
+        <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="discovery.html">Discovery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="date"></div>
+    </header>
+    <main>
+        <h2 id="form">Join the Verona Chamber Form</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>
+                    New Member Information
+                </legend>
+                <label class="dati">First Name* <input type="text" name="fname" required></label>
+                <label class="dati">Last Name* <input type="text" name="lname" required></label>
+                <label class="dati">Business Position <input type="text" name="position" pattern="[a-zA-Z0-9- ]{1,7}" id="position"></label>
+                <label class="dati">Email* <input type="email" name="email" placeholder="sonso@email.com" required></label>
+                <label class="dati">Phone* <input type="tel" name="phone" placeholder="+11231231234" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Business Subscription
+                </legend>
+                <label class="dati">Business Name/Title <input type="text" name="business" required></label>
+
+                <div>Membership Level</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td id="np">
+                                <label class="livello"><input type="radio" name="level" value="nonp">Non Profit</label>
+                                <p>Reserved only to Non-Profit organizations.<br>
+                                    <br>
+                                    <a href="#">Click here for more information</a></p>
+                                <p class="price">FREE</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="bro">
+                                <label class="livello" ><input type="radio" name="level" value="bronze">Bronze</label>
+                                <p>Membership at the Bronze level provides an introduction to the powerful resources available at the Verona Chamber.
+                                    With this introductory membership, chambers can explore the many advantages of membership with the Verona Chamber,
+                                    equipping them with the tools they need to deliver top-notch service to their members.<br>
+                                    <br>
+                                    <a href="#">Click here for more information</a></p>
+                                <p class="price">$ 150</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="sil">
+                                <label class="livello"><input type="radio" name="level" value="silver">Silver</label>
+                                <p>The Silver membership will allow you to expand your knowledge and clout while building a network of influential peers.
+                                    As a Silver member, insider information from Chamber specialists is at your fingertips.
+                                    This membership offers you deeper discounts and exclusive access to Chamber policy events and meetings<br>
+                                    <br>
+                                    <a href="#">Click here for more information</a></p>
+                                <p class="price">$ 250</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="gol">
+                                <label class="livello"><input type="radio" name="level" value="gold">Gold</label>
+                                <p>Whether your chamber is looking to grow its business network, gain public exposure among industry professionals,
+                                    or access to one-on-one government affairs consultations, a Gold membership with the Verona Chamber offers a wealth of
+                                    benefits to assist your chamber in achieving its goals.
+                                    Customized advocacy briefings and advantageous partnerships give each Elite member a platform to prosper and stay on top
+                                    of policy issues and leadership trends.<br>
+                                    <br>
+                                    <a href="#">Click here for more information</a></p>
+                                <p class="price">$ 400</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <label class="dati">Business Description<textarea type="text" name="description" placeholder="Type here"></textarea></label>
+
+            </fieldset>
+            <div id="bottone">
+                <input type="submit" value="Join the Chamber" id="joinBt">
+            </div>
+
+            
+        </form>
+
+
+    </main>
+    <footer>
+        <div class="column">
+            <img id="logoFot" src="images/logo.png" alt="Verona C.C. logo">
+            <p class="chamberFot">
+                Verona<br>
+                Chamber of Commerce<br>
+                <span class="address">Via Trieste, 60 - Verona, Italy</span>
+            </p>
+            <p class="line">
+                info@veronacc.com<br>
+                +39 358 42 56 256<br>
+                <a href="#"><img class="icon" src="images/direction.png" alt="direction icon">Location Map</a>
+            </p>
+        </div>
+        <div class="line">
+            &copy; Verona Chamber | <span>Paolo Roberto Petrignani</span> | WDD 230 Project | Last Modification: <span id="lastMdf"></span>
+        </div>
+        <span id="ultimaVisita"></span>
+    </footer>
+    <script src="scripts/javacode.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

@@ -153,4 +153,31 @@
         box-shadow: 0 0 30px #333;
         border: 1px solid black;
     }
+
+    /*join*/
+
+    tbody {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #np {
+        grid-column: 1/2;
+    }
+
+    #bro {
+        grid-column: 2/3;
+    }
+
+    #sil {
+        grid-column: 3/4;
+    }
+
+    #gol {
+        grid-column: 4/5;
+    }
+
+    td {
+        margin: 0 10px 0 10px;
+    }
 }
