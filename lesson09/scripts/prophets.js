@@ -12,7 +12,7 @@ async function getProphetData() {
   const displayProphets = (prophets) => {
     const cards = document.querySelector('div.cards'); // select the output container element
 
-    function getOrdinal(n) {
+    /*function getOrdinal(n) {
       let order = 'th';
     
       if (n % 10 == 1 && n % 100 != 11)
@@ -29,7 +29,7 @@ async function getProphetData() {
       }
     
       return order;
-    }
+    }*/
 
   
     prophets.forEach((prophet) => {
@@ -39,17 +39,17 @@ async function getProphetData() {
       let date = document.createElement('date');
       let place = document.createElement('place');
       let portrait = document.createElement('img');
-      //let order = document.createElement('order');
-      let ordinal = getOrdinal(prophet.order);
+      /*let order = document.createElement('order');
+      let ordinal = getOrdinal(prophet.order);*/
        
       // Build the h2 content out to show the prophet's full name - finish the template string
-      h2.textContent = `${prophet.name} ${prophet.lastname} - ${ordinal} Latter-day President`;
+      h2.textContent = `${prophet.name} ${prophet.lastname}`;
       date.textContent = `Birth: ${prophet.birthdate}`;
       place.textContent = `Place: ${prophet.birthplace}`;
 
       // Build the image portrait by setting all the relevant attribute
       portrait.setAttribute('src', prophet.imageurl);
-      portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname} - ${ordinal} Latter-day President`);
+      portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
       portrait.setAttribute('alt', `Birth ${prophet.birthdate}`);
       portrait.setAttribute('alt', `Place: ${prophet.birthplace}`);
       portrait.setAttribute('loading', 'lazy');
@@ -61,7 +61,7 @@ async function getProphetData() {
       card.appendChild(date);
       card.appendChild(place);
       card.appendChild(portrait);
-      //card.appendChild(ordinal);
+      //card.appendChild(ordinal);//
       cards.appendChild(card);
     }) // end of forEach loop
 
