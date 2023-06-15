@@ -36,6 +36,7 @@ table {
 
 td {
     padding: 15px;
+    gap: none;
 }
 
 #white {
