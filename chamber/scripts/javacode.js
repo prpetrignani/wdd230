@@ -86,6 +86,8 @@ else {
 	});
 }
 
+
+
 //giorni dall'ultima visita
 let numVisits = document.querySelector('.ultimaVisita');
 
@@ -114,32 +116,6 @@ numOfVisits++;
 localStorage.setItem("visits", numOfVisits);
 
 
+//Business Directory Page
 
-
-
-
-
-
-/*localStorage.setItem('lastVisit', '06-03-2023');
-
-function displayDaysSinceLastVisit() {
-  const visitsDisplay = document.querySelector('#ultimaVisita');
-
-  const lastVisit = localStorage.getItem('lastVisit');
-
-  const lastVisitDate = Date.parse(lastVisit);
-  
-  if (!lastVisitDate) {
-    // Stored date is not a valid format
-    return;
-  }
-
-  const currentDate = new Date();
-
-  const difference = currentDate - lastVisitDate;
-  const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
-
-  visitsDisplay.innerText = "Days since last visit: " + differenceInDays;
-}
-
-displayDaysSinceLastVisit();*/
+const url = 'json'
