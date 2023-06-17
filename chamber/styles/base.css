@@ -506,3 +506,37 @@ td a {
 #message {
     font-family: 'Open Sans', sans-serif;
 }
+
+
+/*Business Directory page*/
+.partners {
+    text-align: center;
+    margin: auto;
+}
+
+section {
+    margin: 20px;
+    background-color: #F7F7FF;
+    border-radius: 10px;
+    border: 1px solid #AC551F;
+    padding: 15px;
+}
+
+section img {
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+
+name {
+    font-family: 'Gruppo', cursive;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+address, state, phone, email, website {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-style: normal;
+    margin-top: 5px;
+}
