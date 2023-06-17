@@ -1,14 +1,14 @@
 {
     "aziende": [
         {
-            "logo": "https://images.ctfassets.net/x7j9qwvpvr5s/6a1aCcEbeW5UqVEVXOXCad/d976b1d6ea14816ffd3039334f7665ba/ducati_id.png",
             "name": "Ducati Motor Holding",
             "address": "Via Moto, 996 - Borgo Panigale (BO)",
             "state": "Italy",
             "phone": "+39 058 85 20 233",
             "email": "info@ducati.com",
             "website": "https://www.ducati.com",
-            "membershipLevel": "Gold"
+            "membershipLevel": "Gold",
+            "logo": "https://images.ctfassets.net/x7j9qwvpvr5s/6a1aCcEbeW5UqVEVXOXCad/d976b1d6ea14816ffd3039334f7665ba/ducati_id.png"
         },
         {
             "logo": "https://www.arena.it/img/logo-arena-header.svg",

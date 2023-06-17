@@ -122,7 +122,7 @@ localStorage.setItem("visits", numOfVisits);
 
 //Business Directory Page
 
-const url = 'https://github.com/prpetrignani/wdd230/blob/master/chamber/data.json'
+const url = 'https://raw.githubusercontent.com/prpetrignani/wdd230/master/chamber/data.json'
 
 async function getDirectoryData() {
     const response = await fetch(url);
@@ -150,6 +150,9 @@ async function getDirectoryData() {
       name.textContent = `${azienda.name}`;
       address.textContent = `${azienda.address}`;
       state.textContent = `${azienda.state}`;
+	  phone.textContent = `${azienda.phone}`;
+	  email.textContent = `${azienda.email}`;
+	  website.textContent = `${azienda.website}`;
 
       // Build the image portrait by setting all the relevant attribute
       portrait.setAttribute('src', azienda.logo);
