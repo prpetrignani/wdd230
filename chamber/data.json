@@ -1,6 +1,6 @@
 {
     "aziende": [
-        {//1
+        {
             "logo": "https://images.ctfassets.net/x7j9qwvpvr5s/6a1aCcEbeW5UqVEVXOXCad/d976b1d6ea14816ffd3039334f7665ba/ducati_id.png",
             "name": "Ducati Motor Holding",
             "address": "Via Moto, 996 - Borgo Panigale (BO)",
@@ -10,7 +10,7 @@
             "website": "https://www.ducati.com",
             "membershipLevel": "Gold"
         },
-        {//2
+        {
             "logo": "https://www.arena.it/img/logo-arena-header.svg",
             "name": "Fondazione Arena di Verona",
             "address": "via Roma 7/d, - Verona",
@@ -20,7 +20,7 @@
             "website": "https://www.arena.it",
             "membershipLevel": "Gold"
         },
-        {//3
+        {
             "logo": "https://lefate.fornace.me/wp-content/uploads/2019/02/logo-top2.png",
             "name": "Le Fate Onlus",
             "address": "Via Cesare dal Fabbro, 4 - Verona",
@@ -30,7 +30,7 @@
             "website": "https://lefate-onlus.org",
             "membershipLevel": "NP"
         },
-        {//4
+        {
             "logo": "http://www.sccapra.it/wp-content/uploads/2022/07/logo-studio-capra.png",
             "name": "Studio Capra Commercialisti Associati",
             "address": "Stradone San Fermo, 20 - Verona",
@@ -40,7 +40,7 @@
             "website": "http://www.sccapra.it",
             "membershipLevel": "Silver"
         },
-        {//5
+        {
             "logo": "https://learche.it/wp-content/uploads/2020/11/LOGO_PASTICCERIA_ARCHE.png",
             "name": "Pasticceria Le Arche",
             "address": "Via Francia, 12/A - Verona",
@@ -50,7 +50,7 @@
             "website": "https://learche.it",
             "membershipLevel": "Bronze"
         },
-        {//6
+        {
             "logo": "https://massimago.com/wp-content/uploads/2018/03/logo_massimago_H110.jpg",
             "name": "Massimago",
             "address": "Stradone San Fermo, 24 - Verona",
@@ -60,7 +60,7 @@
             "website": "https://massimago.com",
             "membershipLevel": "Silver"
         },
-        {//7
+        {
             "logo": "http://www.unacamicia.it/wp-content/uploads/2016/03/logo-fhome-copia.png",
             "name": "Una Camicia",
             "address": "Via Longhena, 29/A - Verona",
@@ -70,7 +70,7 @@
             "website": "http://www.unacamicia.it",
             "membershipLevel": "Bronze"
         },
-        {//8
+        {
             "logo": "http://tommasocardullo.com/wp-content/uploads/2019/03/TC-Square-logo-symbol-1WHITEE.png",
             "name": "Tommaso Cardullo",
             "address": "390 East Center Street - Provo (UT)",
@@ -80,15 +80,15 @@
             "website": "http://tommasocardullo.com",
             "membershipLevel": "Bronze"
         },
-        {//9
-        "logo": "https://arredamentitosini.it/wp-content/uploads/2021/01/logo-arredamenti-tosini.jpg",
-        "name": "Arredamenti Tosini",
-        "address": " Via Don Pietro Meneguzzo 2 - Pressana (VR)",
-        "state": "Italy",
-        "phone": "+39 044 28 57 51",
-        "email": "simone@arredamentitosini.it",
-        "website": "https://arredamentitosini.it",
-        "membershipLevel": "Silver"
+        {
+            "logo": "https://arredamentitosini.it/wp-content/uploads/2021/01/logo-arredamenti-tosini.jpg",
+            "name": "Arredamenti Tosini",
+            "address": " Via Don Pietro Meneguzzo 2 - Pressana (VR)",
+            "state": "Italy",
+            "phone": "+39 044 28 57 51",
+            "email": "simone@arredamentitosini.it",
+            "website": "https://arredamentitosini.it",
+            "membershipLevel": "Silver"
         }
     ]
 }
