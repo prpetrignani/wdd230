@@ -137,6 +137,7 @@ async function getDirectoryData() {
   
     aziende.forEach((azienda) => {
       // Create elements to add to the div.cards element
+	  let portrait = document.createElement('img');
       let card = document.createElement('section');
       let name = document.createElement('name');
       let address = document.createElement('address');
@@ -144,7 +145,7 @@ async function getDirectoryData() {
 	  let phone = document.createElement('phone');
 	  let email = document.createElement('email');
 	  let website = document.createElement('website');
-      let portrait = document.createElement('logo');
+      
        
       // Build the h2 content out to show the prophet's full name - finish the template string
       name.textContent = `${azienda.name}`;
@@ -155,16 +156,17 @@ async function getDirectoryData() {
 	  website.textContent = `${azienda.website}`;
 
       // Build the image portrait by setting all the relevant attribute
-      portrait.setAttribute('src', azienda.logo);
+      portrait.setAttribute('src', azienda.imageurl);
+	  portrait.setAttribute('loading', 'lazy');
+      portrait.setAttribute('width', '100');
+      portrait.setAttribute('height', 'auto');
       portrait.setAttribute('alt', `${azienda.name}`);
       portrait.setAttribute('alt', `${azienda.address}`);
       portrait.setAttribute('alt', `${azienda.state}`);
 	  portrait.setAttribute('alt', `${azienda.phone}`);
 	  portrait.setAttribute('alt', `${azienda.email}`);
 	  portrait.setAttribute('alt', `${azienda.website}`);
-      portrait.setAttribute('loading', 'lazy');
-      portrait.setAttribute('width', '150');
-      portrait.setAttribute('height', 'auto');
+    
   
       // Append the section(card) with the created elements
       card.appendChild(name);
