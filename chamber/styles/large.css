@@ -14,6 +14,12 @@
 
     header {
         padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .social img {
+        justify-content: end;
     }
 
     nav {
@@ -22,10 +28,6 @@
         margin-top: 10px;
         margin: auto;
         text-align: center;
-    }
-
-    .social {
-        grid-column: 3/4;
     }
 
     .pagina1 {
