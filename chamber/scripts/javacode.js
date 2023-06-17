@@ -145,15 +145,6 @@ async function getDirectoryData() {
 	  let phone = document.createElement('phone');
 	  let email = document.createElement('email');
 	  let website = document.createElement('website');
-      
-       
-      // Build the h2 content out to show the prophet's full name - finish the template string
-      name.textContent = `${azienda.name}`;
-      address.textContent = `${azienda.address}`;
-      state.textContent = `${azienda.state}`;
-	  phone.textContent = `${azienda.phone}`;
-	  email.textContent = `${azienda.email}`;
-	  website.textContent = `${azienda.website}`;
 
       // Build the image portrait by setting all the relevant attribute
       portrait.setAttribute('src', azienda.imageurl);
@@ -166,6 +157,13 @@ async function getDirectoryData() {
 	  portrait.setAttribute('alt', `${azienda.phone}`);
 	  portrait.setAttribute('alt', `${azienda.email}`);
 	  portrait.setAttribute('alt', `${azienda.website}`);
+
+	  name.textContent = `${azienda.name}`;
+      address.textContent = `${azienda.address}`;
+      state.textContent = `${azienda.state}`;
+	  phone.textContent = `${azienda.phone}`;
+	  email.textContent = `${azienda.email}`;
+	  website.textContent = `${azienda.website}`;
     
   
       // Append the section(card) with the created elements
