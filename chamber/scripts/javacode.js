@@ -147,28 +147,20 @@ async function getDirectoryData() {
 	  let website = document.createElement('website');
 	  let membershipLevel = document.createElement('membershipLevel')
 
+	  name.textContent = `${azienda.name}`;
+      address.innerHTML = `${azienda.address}`;
+      state.innerHTML = `${azienda.state}`;
+	  phone.innerHTML = `${azienda.phone}`;
+	  email.innerHTML = `${azienda.email}`;
+	  website.textContent = `${azienda.website}`;
+	  membershipLevel.textContent = `${azienda.membershipLevel}`;
+
       // Build the image portrait by setting all the relevant attribute
       portrait.setAttribute('src', azienda.imageurl);
 	  portrait.setAttribute('loading', 'lazy');
-      portrait.setAttribute('width', '100');
-      portrait.setAttribute('height', 'auto');
-      portrait.setAttribute('alt', `${azienda.name}`);
-      portrait.setAttribute('alt', `${azienda.address}`);
-      portrait.setAttribute('alt', `${azienda.state}`);
-	  portrait.setAttribute('alt', `${azienda.phone}`);
-	  portrait.setAttribute('alt', `${azienda.email}`);
-	  portrait.setAttribute('alt', `${azienda.website}`);
-	  portrait.setAttribute('alt', `${azienda.membershipLevel}`)
+      portrait.setAttribute('width', 'auto');
+      portrait.setAttribute('height', '65');
 
-	  name.textContent = `${azienda.name}`;
-      address.textContent = `${azienda.address}`;
-      state.textContent = `${azienda.state}`;
-	  phone.textContent = `${azienda.phone}`;
-	  email.textContent = `${azienda.email}`;
-	  website.textContent = `${azienda.website}`;
-	  membershipLevel.textContent = `${azienda.membershipLevel}`;
-    
-  
       // Append the section(card) with the created elements
       card.appendChild(name);
       card.appendChild(address);

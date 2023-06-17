@@ -510,6 +510,10 @@ td a {
 
 /*Business Directory page*/
 
+.busiPart {
+    display: block;
+}
+
 .gridList {
     margin: 0.5rem auto;
 	padding: 0.8rem;
@@ -575,6 +579,7 @@ name {
 }
 
 address, state, phone, email, website {
+    display: flex;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
     font-style: normal;
