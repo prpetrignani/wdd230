@@ -116,6 +116,62 @@ numOfVisits++;
 localStorage.setItem("visits", numOfVisits);
 
 
+
+
+
+
 //Business Directory Page
 
-const url = 'json'
+const url = 'https://github.com/prpetrignani/wdd230/blob/master/chamber/data.json'
+
+async function getDirectoryData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayDirectory(data.aziende);
+  }
+  
+  getDirectoryData();
+
+  const displayDirectory = (aziende) => {
+    const busiPart = document.querySelector('div.busiPart'); // select the output container element
+  
+    aziende.forEach((azienda) => {
+      // Create elements to add to the div.cards element
+      let card = document.createElement('section');
+      let name = document.createElement('name');
+      let address = document.createElement('address');
+      let state = document.createElement('state');
+	  let phone = document.createElement('phone');
+	  let email = document.createElement('email');
+	  let website = document.createElement('website');
+      let portrait = document.createElement('logo');
+       
+      // Build the h2 content out to show the prophet's full name - finish the template string
+      name.textContent = `${azienda.name}`;
+      address.textContent = `${azienda.address}`;
+      state.textContent = `${azienda.state}`;
+
+      // Build the image portrait by setting all the relevant attribute
+      portrait.setAttribute('src', azienda.logo);
+      portrait.setAttribute('alt', `${azienda.name}`);
+      portrait.setAttribute('alt', `${azienda.address}`);
+      portrait.setAttribute('alt', `${azienda.state}`);
+	  portrait.setAttribute('alt', `${azienda.phone}`);
+	  portrait.setAttribute('alt', `${azienda.email}`);
+	  portrait.setAttribute('alt', `${azienda.website}`);
+      portrait.setAttribute('loading', 'lazy');
+      portrait.setAttribute('width', '150');
+      portrait.setAttribute('height', 'auto');
+  
+      // Append the section(card) with the created elements
+      card.appendChild(name);
+      card.appendChild(address);
+      card.appendChild(state);
+	  card.appendChild(phone);
+	  card.appendChild(email);
+	  card.appendChild(website);
+      card.appendChild(portrait);
+      busiPart.appendChild(card);
+    }) // end of forEach loop
+
+  } // end of function expression
