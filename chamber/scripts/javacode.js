@@ -145,6 +145,7 @@ async function getDirectoryData() {
 	  let phone = document.createElement('phone');
 	  let email = document.createElement('email');
 	  let website = document.createElement('website');
+	  let membershipLevel = document.createElement('membershipLevel')
 
       // Build the image portrait by setting all the relevant attribute
       portrait.setAttribute('src', azienda.imageurl);
@@ -157,6 +158,7 @@ async function getDirectoryData() {
 	  portrait.setAttribute('alt', `${azienda.phone}`);
 	  portrait.setAttribute('alt', `${azienda.email}`);
 	  portrait.setAttribute('alt', `${azienda.website}`);
+	  portrait.setAttribute('alt', `${azienda.membershipLevel}`)
 
 	  name.textContent = `${azienda.name}`;
       address.textContent = `${azienda.address}`;
@@ -164,6 +166,7 @@ async function getDirectoryData() {
 	  phone.textContent = `${azienda.phone}`;
 	  email.textContent = `${azienda.email}`;
 	  website.textContent = `${azienda.website}`;
+	  membershipLevel.textContent = `${azienda.membershipLevel}`;
     
   
       // Append the section(card) with the created elements
@@ -174,7 +177,27 @@ async function getDirectoryData() {
 	  card.appendChild(email);
 	  card.appendChild(website);
       card.appendChild(portrait);
+	  card.appendChild(membershipLevel);
       busiPart.appendChild(card);
     }) // end of forEach loop
 
   } // end of function expression
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector(".busiPart");
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
+
+showList()

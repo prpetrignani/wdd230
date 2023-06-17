@@ -509,6 +509,44 @@ td a {
 
 
 /*Business Directory page*/
+
+.gridList {
+    margin: 0.5rem auto;
+	padding: 0.8rem;
+	text-align: center;
+}
+
+#grid, #list {
+    height: 30px;
+    width: 60px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3A93E1;
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    color: #F7F7FF;
+    box-shadow: 3px 3px 10px gray;
+}
+
+.list section {
+    border: none;
+}
+
+.list section:nth-child(even) {
+	background-color: white;
+}
+
+.list section img, .list section phone, .list section email, .list section address, .list section state {
+	display: none;
+}
+
+.list website {
+    display: block;
+    text-align: center;
+}
+
 .partners {
     text-align: center;
     margin: auto;
@@ -532,11 +570,22 @@ name {
     font-family: 'Gruppo', cursive;
     font-size: 1.2em;
     font-weight: bold;
+    display: block;
+    text-align: center;
 }
 
 address, state, phone, email, website {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
     font-style: normal;
+    margin-top: 5px;
+}
+
+membershipLevel {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #AC551F;
+    text-align: center;
     margin-top: 5px;
 }
