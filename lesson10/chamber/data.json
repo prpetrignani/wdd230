@@ -1,0 +1,94 @@
+{
+    "aziende": [
+        {
+            "imageurl": "https://images.ctfassets.net/x7j9qwvpvr5s/6a1aCcEbeW5UqVEVXOXCad/d976b1d6ea14816ffd3039334f7665ba/ducati_id.png",
+            "name": "Ducati Motor Holding",
+            "address": "Via Moto, 996 - Borgo Panigale (BO)",
+            "state": "Italy",
+            "phone": "+39 058 85 20 233",
+            "email": "info@ducati.com",
+            "website": "https://www.ducati.com",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Fondazione Arena di Verona",
+            "address": "via Roma 7/d, - Verona",
+            "state": "Italy",
+            "phone": "+39 045 80 05 151",
+            "email": "sovrintendenza@arenadiverona.it",
+            "website": "https://www.arena.it",
+            "membershipLevel": "Gold",
+            "imageurl": "https://cdn.glitch.global/347f159c-6536-4a30-9e86-409d01f94158/logo-arena-footer.svg?v=1687028369437"
+        },
+        {
+            "name": "Le Fate Onlus",
+            "address": "Via Cesare dal Fabbro, 4 - Verona",
+            "state": "Italy",
+            "phone": "+39 045 22 22 324",
+            "email": "info@lefate-onlus.org",
+            "website": "https://lefate-onlus.org",
+            "membershipLevel": "NP",
+            "imageurl": "https://cdn.glitch.global/347f159c-6536-4a30-9e86-409d01f94158/fate.png?v=1687029959573"
+        },
+        {
+            "name": "Studio Capra Commercialisti Associati",
+            "address": "Stradone San Fermo, 20 - Verona",
+            "state": "Italy",
+            "phone": "+39 045 80 30 145",
+            "email": "studio@sccapra.it",
+            "website": "http://www.sccapra.it",
+            "membershipLevel": "Silver",
+            "imageurl": "https://cdn.glitch.global/347f159c-6536-4a30-9e86-409d01f94158/scapra.png?v=1687029748059"
+        },
+        {
+            "name": "Pasticceria Le Arche",
+            "address": "Via Francia, 12/A - Verona",
+            "state": "Italy",
+            "phone": "+39 045 58 58 62",
+            "email": "info@learche.it",
+            "website": "https://learche.it",
+            "membershipLevel": "Bronze",
+            "imageurl": "https://learche.it/wp-content/uploads/2020/11/LOGO_PASTICCERIA_ARCHE.png"
+        },
+        {
+            "name": "Massimago",
+            "address": "Stradone San Fermo, 24 - Verona",
+            "state": "Italy",
+            "phone": "+39 327 57 66 977",
+            "email": "winesuites@massimago.com",
+            "website": "https://massimago.com",
+            "membershipLevel": "Silver",
+            "imageurl": "https://massimago.com/wp-content/uploads/2018/03/logo_massimago_H110.jpg"
+        },
+        {
+            "name": "Una Camicia",
+            "address": "Via Longhena, 29/A - Verona",
+            "state": "Italy",
+            "phone": "+39 388 79 41 200",
+            "email": "info@unacamicia.it",
+            "website": "http://www.unacamicia.it",
+            "membershipLevel": "Bronze",
+            "imageurl": "https://cdn.glitch.global/347f159c-6536-4a30-9e86-409d01f94158/unacamicia.png?v=1687028891009"
+        },
+        {
+            "name": "Tommaso Cardullo",
+            "address": "390 East Center Street - Provo (UT)",
+            "state": "USA",
+            "phone": "+01 801 358 2610",
+            "email": "tommaso@tommasocardullo.com",
+            "website": "http://tommasocardullo.com",
+            "membershipLevel": "Bronze",
+            "imageurl": "https://cdn.glitch.global/347f159c-6536-4a30-9e86-409d01f94158/cardullo.png?v=1687028561806"
+        },
+        {
+            "name": "Arredamenti Tosini",
+            "address": " Via Don Pietro Meneguzzo 2 - Pressana (VR)",
+            "state": "Italy",
+            "phone": "+39 044 28 57 51",
+            "email": "simone@arredamentitosini.it",
+            "website": "https://arredamentitosini.it",
+            "membershipLevel": "Silver",
+            "imageurl": "https://arredamentitosini.it/wp-content/uploads/2021/01/logo-arredamenti-tosini.jpg"
+        }
+    ]
+}
