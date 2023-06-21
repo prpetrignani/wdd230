@@ -52,7 +52,7 @@ const iconaMeteo = document.querySelector('#iconaMeteo');
 const captionDesc = document.querySelector('figcaption');
 const wind = document.querySelector('#wind');
 
-const fonte = "https://api.openweathermap.org/data/2.5/weather?q=Verona&appid=491dc5e6a6b2f1b2d272564abc5f6dc3&units=imperial"
+const fonte = "https://api.openweathermap.org/data/2.5/weather?q=Verona&appid=491dc5e6a6b2f1b2d272564abc5f6dc3&units=metric"
 
 async function apiFetch() {
     try {
@@ -60,7 +60,7 @@ async function apiFetch() {
       if (response.ok) {
         const data = await response.json();
         console.log(data); // this is for testing the call
-        // displayResults(data);
+        displayResults(data);
       } else {
           throw Error(await response.text());
       }
