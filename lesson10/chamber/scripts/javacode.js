@@ -50,6 +50,7 @@ document.getElementById('lastMdf').innerHTML = last;
 const temp = document.querySelector('#temp');
 const iconaMeteo = document.querySelector('#iconaMeteo');
 const captionDesc = document.querySelector('figcaption');
+const wind = document.querySelector('#wind');
 
 const fonte = "https://api.openweathermap.org/data/2.5/weather?q=Verona&appid=491dc5e6a6b2f1b2d272564abc5f6dc3&units=imperial"
 
@@ -73,17 +74,14 @@ apiFetch();
 function displayResults(condizioniMeteo) {
 	const iconsrc = `https://openweathermap.org/img/w/${condizioniMeteo.weather[0].icon}.png`;
 	const desc = weatherData.weather[0].description;
-	currentTemp.innerHTML = `<strong>${condizioniMeteo.main.temp.toFixed(0)}</strong>`;
-  
-	
-  
 	weatherIcon.setAttribute('src', iconsrc);
 	weatherIcon.setAttribute('alt', desc);
 	captionDesc.textContent = desc;
-  
+	temp.innerHTML = `<strong>${condizioniMeteo.main.temp.toFixed(0)}</strong>`;
+	wind.innerHTML = `<strong>${condizioniMeteo.wind.speed.toFixed(0)}</strong>`;
   }
   
-  displayResults();
+displayResults();
 
 
 
