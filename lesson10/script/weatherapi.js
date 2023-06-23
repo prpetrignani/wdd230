@@ -19,13 +19,12 @@ async function apiFetch() {
         console.log(error);
     }
   }
-apiFetch();
 
 
 function displayResults(weatherData) {
   currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)} &deg;F</strong>`;
 
-  const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+  const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`;
   const desc = weatherData.weather[0].description;
 
   weatherIcon.setAttribute('src', iconsrc);
@@ -33,4 +32,4 @@ function displayResults(weatherData) {
   captionDesc.textContent = desc;
 
 }
-displayResults();
+apiFetch();
