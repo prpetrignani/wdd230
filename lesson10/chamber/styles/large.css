@@ -135,26 +135,36 @@
     fieldset div {
         font-size: 1.2em;
     }
-}
 
 
+    /*Business Directory page*/
 
-/*Business Directory page*/
+    .busiPart {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
-.busiPart {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+    name {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
 
-name {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
+    section img {
+        margin-top: 15px;
+    }
 
-section img {
-    margin-top: 15px;
-}
+    membershipLevel {
+        font-size: 1.2rem;
+    }
 
-membershipLevel {
-    font-size: 1.2rem;
+    .list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .list section {
+        display: block;
+        margin: auto;
+        width: 700px;
+    }
 }
