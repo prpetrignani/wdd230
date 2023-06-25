@@ -1,7 +1,6 @@
 const temp = document.querySelector('#temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-
 const wind = document.querySelector('#windSpeed')
 
 const fonte = "https://api.openweathermap.org/data/2.5/weather?q=Verona&appid=491dc5e6a6b2f1b2d272564abc5f6dc3&units=metric"
@@ -30,8 +29,11 @@ function displayResults(weatherData) {
     wind.innerHTML = `Wind Speed: ${weatherData.wind.speed.toFixed(0)} km/h`;
 
     const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`;
+    const desc = weatherData.weather[0].description;
   
     weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = desc;
     
     let t = weatherData.main.temp.toFixed(0);
     let s = weatherData.wind.speed.toFixed(0);

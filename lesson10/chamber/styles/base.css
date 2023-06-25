@@ -198,27 +198,20 @@ figure img {
     height: auto;
 }
 
-#wind {
-    grid-column: 1/3;
-    grid-row: 4/5;
-    text-align: center;
-}
-
-#chill {
-    grid-column: 1/3;
-    grid-row: 5/6;
-    text-align: center;
-    margin-top: -15px;
+figcaption {
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    margin-top: -20px;
+    margin-bottom: 25px;
+    text-shadow: 0px 0px 2px #3A93E1;
 }
 
 #data {
     grid-column: 2/3;
     grid-row: 4/5;
     text-align: left;
-}
-
-#wind, #data {
-    margin-top: -25px;
 }
 
 .box4 p, .box6 p {
