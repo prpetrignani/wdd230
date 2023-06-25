@@ -32,8 +32,8 @@
         grid-column: 4/6;
     }
 
-    .box3 img {
-        margin-left: 15px;
+    #gradi {
+        margin-left: -25px;
     }
 
     .column {

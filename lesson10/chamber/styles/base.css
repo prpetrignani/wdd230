@@ -161,15 +161,15 @@ main {
     padding: 5px;
 }
 
-.box3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20% 35% 25% 10% 10%;
-    gap: 5px;
-    max-height: 350px;
+#meteo {
+    display: flex;
 }
 
-.box2 p, .box3 p, .box p, #chill, .discover {
+strong {
+    font-size: 2.5em;
+}
+
+.box2 p, .box3 p, .box p, #chill, .discover, #wind {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
 }
@@ -179,38 +179,29 @@ main {
     grid-row: 1/2;
 }
 
-.box3 img {
-    grid-column: 1/2;
-    max-width: 80px;
-    height: auto;
-    margin-left: 30px;
-}
-
-.box3 img, #temp {
-    grid-row: 2/3;
-}
-
 #temp {
-    grid-column: 2/3;
-    font-size: 2.2em;
+    font-size: 1.8em;
     font-weight: bold;
     color: #3A93E1;
-    margin-right: 10px;
 }
 
-.meteo {
-    grid-column: 1/3;
-    grid-row: 3/4;
-    text-align: center;
-    font-size: 1.2em;
+#gradi {
+    color: #3A93E1;
     font-weight: bold;
-    border-bottom: 1px solid #3A93E1;
+    margin-right: 50px;
+}
+
+figure img {
+    margin-top: -20px;
+    margin-left: -40px;
+    width: 150px;
+    height: auto;
 }
 
 #wind {
-    grid-column: 1/2;
+    grid-column: 1/3;
     grid-row: 4/5;
-    text-align: right;
+    text-align: center;
 }
 
 #chill {
