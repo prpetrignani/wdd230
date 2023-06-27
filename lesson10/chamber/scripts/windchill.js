@@ -41,10 +41,10 @@ function displayResults(weatherData) {
 
     if (t <= 10 && s > 4.8) {
         w = "Wind Chill: " + Math.round (
-            35.74 +
+            13.12 +
             0.6215 * t -
-            (35.75 * s) ** 0.16 +
-            (0.3965 * t) ** 0.16 
+            (11.37 *( s ** 0.16)) +
+            (0.3965 * t * (s ** 0.16)) 
         );
         document.getElementById("windChill").innerHTML = w.toString();
     }
