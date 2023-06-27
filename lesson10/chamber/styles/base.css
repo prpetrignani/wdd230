@@ -151,14 +151,15 @@ main {
 
 .box1 h2 {
     position: absolute;
+    font-weight: bold;
     top: 0;
-    color: #AC551F;
+    color: #ac551f;
     width: 100%;
-    text-shadow: 1px 1px 2px #F7F7FF;
+    background-color: rgba(247, 247, 255, 0.75);
 }
 
-.box2 h2, .box2 p, .box3 p, .box p {
-    padding: 5px;
+.box2 h2, .box2 p, .box3 p, .box4 p, .box p {
+    padding: 10px;
 }
 
 #meteo {
@@ -232,7 +233,7 @@ figcaption {
     font-family: 'Gruppo', cursive;
     font-weight: bold;
     font-size: 20px;
-    color: #F7F7FF;
+    color: rgb(247, 247, 255);
     box-shadow: 3px 3px 10px gray;
 }
 
