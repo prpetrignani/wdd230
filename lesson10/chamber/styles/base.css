@@ -15,8 +15,7 @@
 
 header {
     display: grid;
-    grid-template-rows: 60px 60px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 50px;
     padding: auto;
     gap: 15px;
     background-color: #AC551F;
@@ -36,27 +35,15 @@ h4 {
     margin-top: 10px;
 }
 
-/*.chamber {
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    font-size: 15px;
-    color: black;
-    margin-left: 70px;
-    margin-top: -0px;
-}*/
-
 .social {
     display: flex;
+    justify-content: space-around;
 }
 
 .social img {
     max-width: 30px;
     height: auto;
     margin-top: 20px;
-}
-
-.social img:first-of-type {
-    margin-right: 5px;
 }
 
 nav button {
@@ -81,6 +68,7 @@ nav ul
     list-style-type: none;
     padding: 0;
     margin: 0;
+    /*width: 100%;*/
 }
 
 nav ul li a {
@@ -90,16 +78,26 @@ nav ul li a {
     color: #F7F7FF;
 }
 
-nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+nav a:hover {
+    color: black;
 }
 
 nav ul {
     display: none;
 }
 
-nav ul.open {
+#primaryNav.open {
     display: block;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 95%;
+    text-align: center;
 }
 
 #hamburgerBtn span:nth-child(1) {display: block;}
@@ -144,10 +142,11 @@ main {
 #joinChamber {
     position: absolute;
     min-width: 80px;
-    width: 30%;
-    bottom: 15px;
+    width: 80%;
+    bottom: 5px;
     right: 25px;
 }
+
 
 .box1 h2 {
     position: absolute;
@@ -415,8 +414,14 @@ legend {
     font-size: 1.2em;
 }
 
-#form {
+#form, #formH3 {
     text-align: center;
+}
+
+#formH3 {
+    font-size: 1.4em;
+    font-style: italic;
+    margin-top: -15px;
 }
 
 fieldset div {

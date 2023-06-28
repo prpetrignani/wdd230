@@ -26,6 +26,10 @@
         justify-content: flex-end;
         margin-right: 15px;
     }
+    
+    .social img:first-of-type {
+        margin-right: 10px;
+    }
 
     nav {
         grid-column: 2/3;
@@ -42,6 +46,11 @@
     .box1 {
         grid-column: 2/5;
         grid-row: 1/3;
+    }
+
+    .box1 img {
+        height: 100%;
+        background-size: cover;
     }
 
     .welcome {
@@ -80,6 +89,12 @@
     footer {
         font-size: 20px;
     }
+
+    .chamberFot {
+        margin-left: -20px;
+    }
+
+ 
 
     /*discover*/
     .grigliastatistiche {

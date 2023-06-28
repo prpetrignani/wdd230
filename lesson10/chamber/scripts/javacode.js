@@ -12,11 +12,13 @@ function showBanner () {
 	}
 }
 
-
-
 showBanner();
 
-//menu hamburger
+
+
+
+
+/* ---------- menu hamburger ---------- */
 function toggleMenu () {
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
@@ -26,7 +28,11 @@ function toggleMenu () {
 const x = document.getElementById("hamburgerBtn")
 x.onclick = toggleMenu;
 
-//funzione che mostra la data attuale
+
+
+
+
+/* ---------- funzione che mostra la data attuale ---------- */
 const date = document.querySelector("#date");
 try {
 	const options = {

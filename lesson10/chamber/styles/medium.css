@@ -36,9 +36,18 @@
         margin-left: -25px;
     }
 
+    #joinChamber {
+        width: 40%;
+    }
+
     .column {
         display: grid;
-        grid-template-columns: 80px 42% 38%;
+        grid-template-columns: 8% 46% 46%;
+    }
+
+    #firstLine {
+        text-align: right;
+        margin-right: 15px;
     }
     
     #logoFot {
