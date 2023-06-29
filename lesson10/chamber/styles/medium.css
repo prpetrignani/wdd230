@@ -80,4 +80,11 @@
     .stats1, .stats2, .tour {
         font-size: 1.2em;
     }
+
+    .discover {
+        display: block;
+        margin: auto;
+        margin-top: 25px;
+        max-width: 90%;
+    }
 }

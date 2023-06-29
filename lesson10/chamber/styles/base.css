@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Open+Sans:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap');
 
+p {
+    line-height: 1.5em;
+}
+
+
 #banner {
     background-color: #3A93E1;
     margin: 0;
