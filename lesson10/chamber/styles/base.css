@@ -394,7 +394,7 @@ form label.dati input, form label.dati select, textarea {
     border: solid 1px #AC551F;
     border-radius: 4px;
     padding: .75rem;
-    width: 100%;
+    width: 90%;
     max-width: 18rem;
     background-color: #F7F7FF;
 }
