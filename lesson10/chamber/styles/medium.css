@@ -33,7 +33,7 @@
     }
 
     #gradi {
-        margin-left: -25px;
+        margin-left: -45px;
     }
 
     #joinChamber {
@@ -57,7 +57,7 @@
     .chamberFot {
         grid-column: 2/3;
         text-align: left;
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     .chamberFot, .line {
