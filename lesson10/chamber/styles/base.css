@@ -82,7 +82,8 @@ nav ul li a {
 }
 
 nav a:hover {
-    color: black;
+    background-color: #3A93E1;
+    color: #F7F7FF;
 }
 
 nav ul {
@@ -92,12 +93,11 @@ nav ul {
 #primaryNav.open {
     display: block;
     margin: auto;
-    left: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 95%;
-    text-align: center;
+    width: 100%;
+    text-align: left;
 }
 
 #hamburgerBtn span:nth-child(1) {display: block;}
@@ -144,7 +144,7 @@ main {
     position: absolute;
     min-width: 80px;
     width: 80%;
-    bottom: 5px;
+    bottom: -5px;
     right: 25px;
 }
 
@@ -168,6 +168,12 @@ main {
 
 strong {
     font-size: 2.5em;
+}
+
+#credit {
+    font-style: italic;
+    font-size: 0.8rem;
+    color: gray;
 }
 
 .box2 p, .box3 p, .box p, #chill, .discover, #wind {
