@@ -273,7 +273,7 @@ footer {
 }
 
 .line, .address {
-    line-height: 1.3;
+    line-height: 1.3rem;
     font-weight: normal;
 }
 
@@ -591,4 +591,19 @@ membershipLevel {
     color: #AC551F;
     text-align: center;
     margin-top: 5px;
+}
+
+/* ----- CONTACT ----- */
+
+.contact {
+    text-align: center;
+}
+
+.contactInfo, .messageInfo {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5rem;
+}
+
+.contactInfo img {
+    margin-left: 15px;
 }

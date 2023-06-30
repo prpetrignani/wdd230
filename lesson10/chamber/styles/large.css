@@ -186,4 +186,17 @@
         margin: auto;
         width: 700px;
     }
+
+
+
+    /* ----- CONTACT ----- */
+
+    .messageInfo {
+        margin-top: 30px;
+    }
+
+    .contactInfo {
+        display: flex;
+        justify-content: space-between;
+    }
 }
