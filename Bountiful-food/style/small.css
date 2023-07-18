@@ -98,4 +98,14 @@
     .photoStory img{
         max-width: 160px;
     }
+
+    /* ------ FRESH ------*/
+
+    fieldset label {
+        display: block;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+
 }

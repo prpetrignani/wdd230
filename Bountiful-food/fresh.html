@@ -27,36 +27,36 @@
 <body>
     <main>
         <h2>Create Your Own Specialty Drink</h2>
-        <div class="driksForm">
-            <form method="get" action="">
-                <fieldset>
+        <div class="fruit-section">
+            <form id="frituSelect">
+                <label hidden>Date:<input type="date" name="date" hidden id="date"></label>
+                <fieldset class="userData">
                     <legend>
                         Order Info
                     </legend>
-                    <label class="dati">First Name* <input type="text" name="fname"></label>
-                    <label class="dati">Email* <input type="email" name="email" placeholder="sonso@email.com"></label>
-                    <label class="dati">Phone* <input type="tel" name="phone" placeholder="+11231231234"></label>
+                    <label class="dati" for="fname">First Name* <input type="text" name="fname" aria-label="First Name" class="input" id='fname' required></label>
+                    <label class="dati">Email* <input type="email" name="email" id="email" class="input" placeholder="sonso@email.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label>
+                    <label class="dati">Phone* <input type="tel" name="phone" id="phone" class="input" placeholder="+11231231234" pattern="^[0-9()]{,}$"required></label>
                 </fieldset>
                 <fieldset>
                     <legend>
                         Choose 3 Fruits
                     </legend>
-                    <label class="display"></label>
+                    <div id="fruit-selector" class="selector"></div>
                 </fieldset>
                 <fieldset>
                     <legend>
                         Additional Information
                     </legend>
-                    <textarea type="text" name="description" placeholder="Type here"></textarea>
+                    <textarea type="text" name="description" id="description" class="input" placeholder="Type here"></textarea>
                 </fieldset>
+                <input type="button" value="Make It" id="btn" class="bottone">
             </form>
-            <div class="bottone">
-                <input type="submit" value="Make It" id="joinBt">
-            </div>
             <fieldset>
                 <legend>Order Recap</legend>
+                <div id="output"></div>
                 <button class="bottone">
-                    <a href="">Order Them</a>
+                    <a href="confirmation.html">Order Them</a>
                 </button>
             </fieldset>
         </div>
