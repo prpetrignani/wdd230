@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;1,300&display=swap');
+
+html, body {
+    margin: 0;
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .top-nav {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #497990;
+    height: 50px;
+    padding: 1em;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #86C8B1;
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #FFE135;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: #497990;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  
+  @media (max-width: 992px) {
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      background-color: #86C8B1;
+      z-index: 1;
+    }
+
+    .menu li a {
+      color: #497990;
+    }
+
+    .menu > li:hover {
+        background-color: #FFE135;
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+  }
+
+
+#sfondoClaim {
+  position: relative;
+  text-align: center;
+}
+
+  #sfondoClaim img {
+    width: 100%;
+    background-size: cover;
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .logo {
+    max-width: 80px;
+  }
+
+  h2 {
+    font-family: 'Arsenal', sans-serif;
+    text-align: center;
+    font-size: 3em;
+    color: #497990;
+  }
+
+  h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #fb2943;
+    text-align: center;
+  }
+
+  .claim {
+    font-size: 5.8rem;
+    font-weight: 700;
+    color: #FFE135;
+    -webkit-text-stroke: 2px #497990;
+    text-shadow: 3px 3px 3px #20183a;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5rem;
+    color: #20183a;
+  }
+
+  .call {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .sezione {
+    height: 5px;
+    width: 800px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #FFE135;
+  }
+
+  .benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .spec{
+    border: 3px solid #497990;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .spec:hover {
+    box-shadow: 0px 0px 15px #20183a;
+  }
+
+  .bottone, #joinBt {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    background-color: #497990;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    width: 130px;
+    height: 50px;
+    box-shadow: 0px 0px 10px #20183a;
+    transition-duration: 0.4s;
+  }
+
+  .bottone:hover,  #joinBt:hover {
+    background-color: #FFE135;
+  }
+
+  .bottone a:hover, #joinBt:hover {
+    color: #497990;
+  }
+
+  .bottone a, #joinBt {
+    text-decoration: none;
+    color: #FFE135;
+  }
+
+
+
+/* ------ WEATHER SECTION ------ */
+#meteo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#oggi {
+  grid-column: 1/2;
+}
+
+#forcast {
+  grid-column: 2/3;
+}
+
+#gradi {
+  font-family: 'Arsenal', sans-serif;
+  font-size: 3rem;
+  margin-left: 50px;
+}
+
+#temp {
+  font-size: 5rem;
+}
+
+figure img {
+  margin-left: 200px;
+  margin-top: -165px;
+}
+
+figcaption {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-top: -60px;
+  font-style: italic;
+}
+
+.next3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly
+}
+
+.next3 p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+}
+
+#condizioni {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+#credit {
+  text-align: center;
+  font-style: italic;
+}
+
+
+
+/* ------ TAKE A LOOK ------*/
+
+#posti {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#posti img {
+  max-width: 150px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#beach{
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+#beach a {
+  text-decoration: none;
+  color: #20183a;
+}
+
+footer {
+  background-color: #497990;
+}
+
+footer .logo {
+  margin-top: 20px;
+  max-width: 100px;
+}
+
+#inLinea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#inLinea p {
+  text-align: center;
+  color: #86C8B1;
+}
+
+.icon {
+  margin-top: 10px;
+}
+
+.icon img {
+  max-height: 50px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#conclusione {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #FFE135;
+  padding: 20px;
+  font-size: 0.8rem;
+}
+
+
+/* ------ FORM ------*/
+
+form fieldset, fieldset {
+  border-radius: 10px;
+  border: 3px solid #497990;
+  margin: 30px;
+}
+
+legend {
+  font-family: 'Arsenal', sans-serif;
+  font-size: 1.4rem;
+}
+
+.dati {
+  font-family: 'Raleway', sans-serif;
+  margin-right: 20px;
+}
+
+.display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+section {
+  border: 2px solid #86C8B1;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+name {
+  font-family: 'Arsenal', sans-serif;
+  font-size: 1.2rem;
+}
+
+textarea {
+  border: 1px solid #fb2943;
+  border-radius: 5px;
+}
+
+/* ------- RESOURCE ------ */
+
+.risorse {
+  text-align: center;
+}
+
+.risorse a {
+  text-decoration: none;
+  color: #20183a;
+  font-style: italic;
+}
+
+
+/* ------ ABOUT US ------ */
+
+.story {
+  margin: 30px;
+}
+
+.photoStory{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.photoStory img{
+  max-width: 400px;
+}

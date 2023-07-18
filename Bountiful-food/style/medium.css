@@ -1,0 +1,20 @@
+@media only screen and (max-width: 992px) {
+   
+    .sezione {
+        width: 700px;
+    }
+
+    figure img {
+        margin-left: 130px;
+    }
+
+    .dati {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .photoStory img{
+        max-width: 340px;
+    }
+
+}

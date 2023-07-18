@@ -1,0 +1,101 @@
+@media only screen and (max-width: 560px) {
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    
+      name {
+        font-size: 1.1rem;
+      }
+
+    .dati {
+        margin-bottom: 10px;
+    }
+
+    #inLinea{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 1fr 2fr;
+    }
+    
+    footer .logo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-top: 10px;
+        margin-left: 10px;
+        max-width: 80px;
+    }
+
+    .icon {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: flex;
+        margin: 10px 10px 0px 0px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .icon img {
+        height: 30px;
+    }
+
+    div.copy {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    #conclusione {
+        margin-top: -50px;
+    }
+
+
+    /* ------ HOME ------*/
+
+    .sezione {
+        width: 300px;
+      }
+
+    .benefits {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #meteo {
+        display: grid;
+        grid-template-rows: 1.5fr 1fr;
+    }
+
+    #oggi {
+        grid-row: 1/2;
+      }
+
+    .forcast {
+        grid-row: 2/3;
+    }
+
+    #temp {
+        font-size: 3rem;
+    }
+
+    figure img {
+        margin-left: 100px;
+        margin-top: -165px;
+      }
+    
+    .next3 p {
+        font-size: 2rem;
+      }
+
+    #posti {
+        flex-wrap: wrap;
+    }
+
+    .photoStory{
+        justify-content: space-evenly;
+    }
+
+    .photoStory img{
+        max-width: 160px;
+    }
+}

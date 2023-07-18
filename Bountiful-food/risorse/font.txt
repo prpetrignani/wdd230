@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap');
+
+font-family: 'Arsenal', sans-serif;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;1,300&display=swap');
+
+font-family: 'Raleway', sans-serif;
+
+foto frutta: <a href="https://it.freepik.com/foto-gratuito/frutti-assortiti-e-misti_4124552.htm#query=frutta&position=3&from_view=search&track=sph">Immagine di lifeforstock</a> su Freepik
+
+testo benefici succhi freschi
+https://wardsgainesville.com/4-health-benefits-freshly-squeezed-juice/#:~:text=Fresh%20juices%20are%20packed%20with,food%20through%20the%20digestive%20tract.
+
+Revis, B. (2023, March 29). 4 health benefits of freshly squeezed juice. Ward’s Supermarket. https://wardsgainesville.com/4-health-benefits-freshly-squeezed-juice/#:~:text=Fresh%20juices%20are%20packed%20with,food%20through%20the%20digestive%20tract. 
+
+foto pommodori
+<a href="https://it.freepik.com/foto-gratuito/azienda-agricola-biologica_11451047.htm#query=farm&position=3&from_view=search&track=sph">Immagine di aleksandarlittlewolf</a> su Freepik
+
+foto annaffia piante
+<a href="https://it.freepik.com/foto-gratuito/la-donna-in-un-cappello-che-tiene-imbuto-e-lavora-in-un-giardino_9659559.htm#query=farm&position=16&from_view=search&track=sph">Immagine di prostooleh</a> su Freepik
+
+foto cassetta di frutta in mano
+<a href="https://it.freepik.com/foto-gratuito/primo-piano-della-scatola-con-verdure-mature_11600575.htm#query=farm&position=34&from_view=search&track=sph">Immagine di gpointstudio</a> su Freepik
+
+contadino con zucche
+Immagine di <a href="https://it.freepik.com/foto-gratuito/contadino-maschio-con-il-raccolto-di-zucche-e-cocomeri-nella-sua-fattoria_21076618.htm#query=anguria&position=43&from_view=search&track=sph">Freepik</a>

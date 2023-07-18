@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/large.css">
+    <link rel="stylesheet" href="style/medium.css">
+    <link rel="stylesheet" href="style/small.css">
+
+    <title>Bountiful Foods - MAKE THE DRINK -</title>
+</head>
+<header class="top-nav">
+    <div>
+        <a href="index.html"><img class="logo" src="img/bountiful-foods-logo.webp" alt="bountiful foods logo"></a>
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="fresh.html">FRESH</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="resource.html">RESOURCE</a></li>
+    </ul>
+</header>
+<body>
+    <main>
+        <h2>Create Your Own Specialty Drink</h2>
+        <div class="driksForm">
+            <form method="get" action="">
+                <fieldset>
+                    <legend>
+                        Order Info
+                    </legend>
+                    <label class="dati">First Name* <input type="text" name="fname"></label>
+                    <label class="dati">Email* <input type="email" name="email" placeholder="sonso@email.com"></label>
+                    <label class="dati">Phone* <input type="tel" name="phone" placeholder="+11231231234"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Choose 3 Fruits
+                    </legend>
+                    <label class="display"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Additional Information
+                    </legend>
+                    <textarea type="text" name="description" placeholder="Type here"></textarea>
+                </fieldset>
+            </form>
+            <div class="bottone">
+                <input type="submit" value="Make It" id="joinBt">
+            </div>
+            <fieldset>
+                <legend>Order Recap</legend>
+                <button class="bottone">
+                    <a href="">Order Them</a>
+                </button>
+            </fieldset>
+        </div>
+        
+    </main>
+    <footer>
+        <div id="inLinea">
+            <div>
+                <a href="index.html"><img class="logo" src="img/bountiful-foods-logo.webp" alt="bountiful foods logo"></a>
+            </div>
+            <div class="copy">
+                <p>
+                    Bountiful Foods &copy;<br>
+                    7020 Avenida Encinas - Carlsbad - CA 92011
+                </p>
+            </div>
+            <div class="icon">
+                <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+                <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+            </div>
+        </div>
+        <div id="conclusione">
+            <span>Paolo Roberto Petrignani</span> | WDD 230 Project | Last Modification: <span id="ulitmaMod"></span>
+        </div>
+    </footer>
+    <script src="script/ultima.js"></script>
+    <script src="script/form.js"></script>
+</body>
+</html>
