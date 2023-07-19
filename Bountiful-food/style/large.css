@@ -353,7 +353,7 @@ textarea {
 }
 
 form label.dati input:required {
-  border-left: red solid 6px;
+  border-left: #fb2943 solid 6px;
 }
 
 form label.dati input:required:valid {
@@ -406,6 +406,29 @@ option, select {
 
 .photoStory img{
   max-width: 400px;
+}
+
+.lastBlock {
+  display: block;
+  border: 2px solid #497990;
+  border-radius: 10px;
+  max-width: 900px;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.mapInfo {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.map img{
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 /* ------ CONFIRMATION -----*/

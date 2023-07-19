@@ -59,8 +59,21 @@
         margin-top: 10px;
     }
 
+    .photoStory{
+      justify-content: space-evenly;
+    }
+
     .photoStory img{
-        max-width: 340px;
+        max-width: 350px;
+    }
+
+    .lastBlock {
+      max-width: 700px;
+    }
+
+    .mapInfo {
+      display: block;
+      text-align: center;
     }
 
 }

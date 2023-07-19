@@ -98,6 +98,15 @@
     .photoStory img{
         max-width: 160px;
     }
+    
+    .lastBlock {
+        max-width: 350px;
+      }
+    
+    .map img{
+        max-width: 300px;
+        margin-bottom: 0px;
+    }
 
     /* ------ FRESH ------*/
 
